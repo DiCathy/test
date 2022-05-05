@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+  <title>Kindercafe</title>
+  <link rel="stylesheet" href="pustekuchen.css">
+
+  
+</head>
+
+<body>
+   <header>
+   
+        <nav>
+        <a href="#Galerie"> Galerie</a>
+        <a href="#Öffnungszeiten">Öffnungszeiten<a> 
+        <a href="#Kontakt">Kontakt</a>
+        <a href="#Standort"> Standort</a>
+        <a href="#Preisliste">Preisliste</a>
+      </nav>
+    
+   </header>
+   <main>
+    <h1>Kindercafe Pustekuchen</h1>
+    <h2>Herzlich Willkommen</h2>
+   
+   
+  <div class="a">
+   <p>
+     
+       Kindercafe Pustekuchen lädt euch ein in gemütlicher Atmosphäre mit anderen   Eltern und Kindern eine Auszeit vom Alltag zu bekommen.
+       Bei gutem Wetter können eure Eltern, während Ihr draußen die frische Luft genießt, eine unserer Kaffeespezialitäten kosten.<div class="img"><img src="kawaii-animal-patches-g96468b1ac_640.png" alt="Tier" width="15%" height="10%"></div>
+   </p>
+   
+     <p>  Ein offen gestalteter Spielbereich
+          lässt viel Raum für kreatives spielen. Auch ältere Geschwisterkinder finden
+        viele Anregungen für kreative Spiele.</p>
+  </div>
+   
+  <div class="b">
+    <h2>Kindergeburtstage/Familienfeiern</h2>
+    <p>
+      Ihre Kindergeburtstage, Familienfeier oder andere Events können Sie bei uns als geschlossene Gesellschaft feiern. Unsere einzigartige und modern eingerichtete Räumlichkeit bietet ausreichend Platz für Eltern und Kinder (max 50 Personen inkl. Kinder). Sie können unsere Räumlichkeiten mieten oder unsere verschiedene Pakete mit Deko, Essen, Kinderunterhaltung und vieles mehr buchen</p>
+    
+  </div>
+  
+
+  <section>
+     
+     <div class="slideshow-container">
+     <h3 id="Galerie"> Galerie</h3> 
+
+     <div class="mySlides fade">
+    <div class="numbertext">1 / 5</div>
+    <img src="Kindercafe1.jpg" style="width:100%">
+    <div class="text">Innenbereich 1</div>
+  </div>
+  
+  <div class="mySlides fade">
+    <div class="numbertext">2 / 5</div>
+    <img src="Kindercafe2.jpg" style="width:100%">
+    <div class="text">Innenbereich 2</div>
+  </div>
+  
+  <div class="mySlides fade">
+    <div class="numbertext">3 / 5</div>
+    <img src="kindergeburtstag.jpeg" style="width:100%">
+    <div class="text">Geburtstag</div>
+  </div>
+  
+  <div class="mySlides fade">
+    <div class="numbertext">4 / 5</div>
+    <img src="Kindercafe3.jpg" style="width:100%">
+    <div class="text">Innenbereich 3</div>
+  </div>
+  
+  <div class="mySlides fade">
+    <div class="numbertext">5 / 5</div>
+    <img src="Kindergeburtstag1.jpg" style="width:100%">
+    <div class="text">Geburtstag 1</div>
+  </div>
+  
+  <a class="prev" onclick="plusSlides(-1)">links</a>
+  <a class="next" onclick="plusSlides(1)">rechts</a>
+  
+  </div>
+  <br>
+  
+  <div style="text-align:center">
+    <span class="dot" onclick="currentSlide(1)"></span> 
+    <span class="dot" onclick="currentSlide(2)"></span> 
+    <span class="dot" onclick="currentSlide(3)"></span> 
+    <span class="dot" onclick="currentSlide(4)"></span> 
+    <span class="dot" onclick="currentSlide(5)"></span> 
+  </div>
+
+  
+  <script>
+  var slideIndex = 1;
+  showSlides(slideIndex);
+  
+  function plusSlides(n) {
+    showSlides(slideIndex += n);
+  }
+  
+  function currentSlide(n) {
+    showSlides(slideIndex = n);
+  }
+  
+  function showSlides(n) {
+    var i;
+    var slides = document.getElementsByClassName("mySlides");
+    var dots = document.getElementsByClassName("dot");
+    if (n > slides.length) {slideIndex = 1}    
+    if (n < 1) {slideIndex = slides.length}
+    for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";  
+    }
+    for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+    }
+    slides[slideIndex-1].style.display = "block";  
+    dots[slideIndex-1].className += " active";
+  }
+  </script>  
+        
+      </section>
+      
+      <div class="c">
+         <section>
+        <h3 id="Öffnungszeiten"> Öffnungszeiten</h3>
+              Montags    : Ruhetag<br>
+              Dienstags  : 14.30 - 19.00 Uhr<br>
+              Mittwoch   : 14.30 - 19.00 Uhr<br>
+              Donnerstag : 14.30 - 19.00 Uhr<br>
+              Freitags   : 14.30 - 21.00 Uhr<br>
+              
+        
+      </section></div> 
+  
+      <div class="g"><img src="mandala-ge9286e72a_640.png" alt="Mandala"></div> 
+
+<div class="d">
+      <section>
+        <h3 id="Kontakt"> Kontakt</h3>
+
+        <label>Nachname:</label>
+        <input type="text" name="nachname"><br><br>
+        
+        <label>Vorname:</label>
+        <input type="text" name="vorname" ><br><br>
+
+
+        <label>Telefonr.:</label>
+        <input type="Telefonr." name="Telefonnr."><br><br>
+
+
+        <label>Nachricht:</label>
+        <textarea name="nachricht"></textarea><br><br>
+
+       
+        <input type="submit" value="Senden">
+      </section>  </div>
+      
+      <br>
+      <div class="f"> 
+       <section>
+        <h3 id="Standort"> Standort</h3>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2489.7583808400955!2d7.396823215136414!3d51.38911862716643!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47b9231370a3386f%3A0x24686d720fae7644!2sIm%20Kirchspiel%209%2C%2058300%20Wetter%20(Ruhr)!5e0!3m2!1sde!2sde!4v1633434928767!5m2!1sde!2sde" width="200" height="150" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+      </section></div>
+    
+
+    </main><br><br>
+  <footer>
+      Kindercafe Pustekuchen Im Kirchspiel 9 58300 Wetter <br>
+      Impressum Datenschutz 
+   <div class="z">
+     <a href="https://www.facebook.de" target="blank">
+     <ion-icon name="logo-facebook"></ion-icon></a>
+     <img src="beim.png"  alt="logo"></div>
+     
+
+  </footer>
+
+<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+
+</body>
+</html>
